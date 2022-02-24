@@ -280,4 +280,12 @@
 
     <!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">true</bool>
+
+    <!-- List supported color modes. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- P3 -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED -->     <!-- This applies a 10% boost using the PCC-->
+        <item>3</item> <!-- P3 Enchance -->
+        <item>2</item> <!-- Native -->
+    </integer-array>
 </resources>
