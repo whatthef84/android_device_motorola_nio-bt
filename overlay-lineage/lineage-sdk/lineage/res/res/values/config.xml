@@ -79,4 +79,7 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
+
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/card0/sde-crtc-0/measured_fps</string>    
 </resources>
