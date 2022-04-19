@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/nio/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_nio
@@ -51,3 +51,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 WITH_GMS := true
 GMS_MAKEFILE := gms.mk
 MAINLINE_MODULES_MAKEFILE := mainline_modules.mk
+
+#QUICKTAP
+TARGET_SUPPORTS_QUICK_TAP := true
