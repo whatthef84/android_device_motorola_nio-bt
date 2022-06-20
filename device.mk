@@ -529,10 +529,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-#motocamera3
+# Moto Camera
 $(call inherit-product, vendor/customization/customization.mk)
 TARGET_MOTOCAM3_SUPPORTED += true
 
-# BootFix
+# Boot-Fix
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
