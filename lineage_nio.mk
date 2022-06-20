@@ -52,5 +52,5 @@ WITH_GMS := true
 GMS_MAKEFILE := gms.mk
 MAINLINE_MODULES_MAKEFILE := mainline_modules.mk
 
-#QUICKTAP
+# Quick-Tap
 TARGET_SUPPORTS_QUICK_TAP := true
