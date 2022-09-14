@@ -17,9 +17,6 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/nio/nio-vendor.mk)
 
@@ -142,7 +139,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.kona \
     audio.r_submix.default \
