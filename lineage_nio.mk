@@ -28,29 +28,21 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_nio
 PRODUCT_DEVICE := nio
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola Edge S
+PRODUCT_MODEL := moto g(100)
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2520
-TARGET_SCREEN_WIDTH := 1080
-
 # Build info
-BUILD_FINGERPRINT := "motorola/nio_retcn/nio:11/RRN31.Q3-1-11-6/f81cc:user/release-keys"
+BUILD_FINGERPRINT := "motorola/nio_retail/nio:12/S1RTS32.41-20-16-1-3/22842-f0a4cf:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=nio_retcn \
-    PRIVATE_BUILD_DESC="nio_retcn-user 11 RRN31.Q3-1-11-6 f81cc release-keys"
+    PRIVATE_BUILD_DESC="nio_retail-user 12 S1RTS32.41-20-16-1-3 22842-f0a4cf release-keys" \
+    TARGET_PRODUCT="nio_retail"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# GMS
-#WITH_GMS := true
-#GMS_MAKEFILE := gms.mk
-#MAINLINE_MODULES_MAKEFILE := mainline_modules.mk
-
 # Quick-Tap
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1440
